@@ -1,39 +1,29 @@
-# MAC-Muliplier-Accumulator-Design-Using-different-Compressors
-This project implements a Low Power Multiply-Accumulate (MAC) architecture using 4:2 and 5:2 compressor logic to achieve reduced area, delay, and power consumption. The design is modeled in Verilog HDL and synthesized using Xilinx Vivado on an Artix-7 FPGA platform.
+# MAC-Multiplier-Accumulator-Design-Using-Different-Compressors
 
-***Project Objective***
+This project implements a low-power Multiply–Accumulate (MAC) architecture using 4:2 and 5:2 compressor logic.  
+The design is built using Verilog HDL and synthesized on a Xilinx Artix-7 FPGA to evaluate area, delay, and power performance
 
-To design a low-power and high-performance MAC unit suitable for DSP applications.
+### Project Objective
 
-To reduce dynamic switching power and critical path delay using optimized compressor circuits.
+- Design a low-power, high-performance MAC unit for DSP applications  
+- Reduce dynamic switching power using optimized compressor circuits  
+- Minimize critical-path delay through efficient partial product reduction  
+- Compare multiple compressor architectures for performance gains  
+- Validate the MAC architecture through simulation, synthesis, and analysis  
 
-To compare multiple compressor architectures to find the most power-efficient design.
+### Methodology
 
-To validate the architecture through simulation, synthesis, and performance evaluation.
+- Generate partial products using Modified Booth algorithm  
+- Reduce partial products using 4:2 and 5:2 compressor structures  
+- Use carry-propagate adders to produce the final MAC output  
+- Implement accumulation using a feedback register  
+- Simulate and synthesize the design using Vivado 2021.1  
+- Deploy and verify performance on Artix-7 FPGA  
 
-***Methodology***
+### Applications
 
-Generation of partial products using Modified Booth algorithm
-
-Reduction using 4:2 and 5:2 compressors
-
-Carry-propagate addition to form the result
-
-Accumulation through feedback register
-
-Simulation & synthesis using Vivado 2021.1
-
-FPGA deployment on Artix-7
-
-
-***Aplications***
-
-Compressor Design 3 provides the best performance and is suitable for portable and high-speed DSP applications such as:
-
-FIR/IIR Filters
-
-Convolution Engines
-
-CNN accelerators
-
-Edge AI & real-time processing
+- FIR / IIR digital filters  
+- Convolution engines  
+- CNN accelerator datapaths  
+- Edge-AI and real-time signal processing  
+- Low-power DSP systems  
