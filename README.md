@@ -24,3 +24,16 @@ Accumulation through feedback register
 Simulation & synthesis using Vivado 2021.1
 
 FPGA deployment on Artix-7
+
+
+***Aplications***
+
+Compressor Design 3 provides the best performance and is suitable for portable and high-speed DSP applications such as:
+
+FIR/IIR Filters
+
+Convolution Engines
+
+CNN accelerators
+
+Edge AI & real-time processing
